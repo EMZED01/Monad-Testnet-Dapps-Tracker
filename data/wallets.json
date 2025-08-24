@@ -1,0 +1,21 @@
+{
+  "0x1234567890abcdef": [
+    "MonadSwap",
+    "MonadLend",
+    "MonadBridge"
+  ],
+  "0xabcdef1234567890": [
+    "MonadBridge",
+    "MonadNameService"
+  ],
+  "monad:demo": [
+    "MonadDEX",
+    "MonadPerps",
+    "MonadStable",
+    "MonadStake"
+  ],
+  "0xfeedfacecafebeef": [
+    "MonadNFT",
+    "MonadFarm"
+  ]
+}
