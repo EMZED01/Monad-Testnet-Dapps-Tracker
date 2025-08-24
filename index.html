@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monad Testnet dApp Tracker — by EMZED</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Monad Testnet dApp Tracker</h1>
+    <p class="subtitle">Paste a wallet address to see which dApps have been explored. Data is read from <code>data/wallets.json</code> in this repo.</p>
+  </header>
+
+  <main class="container">
+    <section class="wallet-checker">
+      <label for="walletInput">Wallet address</label>
+      <div class="input-row">
+        <input id="walletInput" type="text" placeholder="0x... or any test address" />
+        <button id="checkBtn" aria-label="Check wallet">Check</button>
+      </div>
+      <p id="result" class="result"></p>
+    </section>
+
+    <section>
+      <div class="notice">
+        Source of dApps: Monad feedback form & community lists. Select set is curated and may change.
+      </div>
+      <div id="stats" class="stats" aria-live="polite"></div>
+      <div id="grid" class="grid">
+        <!-- dApp cards. The data-dapp value must match entries in wallets.json exactly. -->
+        <button class="card" data-dapp="MonadSwap">MonadSwap</button>
+        <button class="card" data-dapp="MonadLend">MonadLend</button>
+        <button class="card" data-dapp="MonadBridge">MonadBridge</button>
+        <button class="card" data-dapp="MonadNFT">MonadNFT</button>
+        <button class="card" data-dapp="MonadFarm">MonadFarm</button>
+        <button class="card" data-dapp="MonadDEX">MonadDEX</button>
+        <button class="card" data-dapp="MonadPerps">MonadPerps</button>
+        <button class="card" data-dapp="MonadStable">MonadStable</button>
+        <button class="card" data-dapp="MonadNameService">MonadNameService</button>
+        <button class="card" data-dapp="MonadStake">MonadStake</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Tool by <strong>EMZED</strong> — <span>@iamemzed</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
